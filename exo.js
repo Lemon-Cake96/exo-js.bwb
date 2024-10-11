@@ -1,7 +1,7 @@
 let monCanard = "Donald";
 
-let nombreDePate;
-let nombreDAile;
+let nombreDePate = 2;
+let nombreDAile = 2;
 
 function canard (nombreDePate,nombreDAile){
     let maCannette = "Daisy";
@@ -11,5 +11,6 @@ function canard (nombreDePate,nombreDAile){
     return nombreDePate += nombreDAile;
 }
 
+console.log(canard())
 console.log(canard(2,2))
 console.log(canard("deux","deux"))
