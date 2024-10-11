@@ -1,3 +1,4 @@
+//---- Exercice Un ----
 let monCanard = "Donald";
 
 let nombreDePate = 2;
@@ -14,6 +15,8 @@ function canard (nombreDePate,nombreDAile){
 
 console.log(canard(2,2))
 console.log(canard("deux","deux"))
+
+// ---- Exercice Deux ----
 
 const x = 1;
 
@@ -33,7 +36,7 @@ const lettre = "AZERTYUPQSDFGHJKLMWXCVBN";
 const nombre = "0123456789";
 let plaque ="";
 
-
+//---- Exercice Trois -----
 /*
 function PlaqueGen (){
     for (let i=0; i < 2 ; i++){
@@ -89,4 +92,17 @@ function PlaqueGen(){
     return plaque;
 }
 
+//nombre de plaques a creer//
+let Nplaque = prompt("Combien de plaques");
 
+//array des plaques generée
+let GenPlaques = [];
+
+//Boucle qui genere les plaques n fois voulu
+for (let i=0; i<Nplaque; i++){
+    plaque ="";
+    PlaqueGen();
+    GenPlaques.push(plaque);
+}
+
+console.log(GenPlaques);
