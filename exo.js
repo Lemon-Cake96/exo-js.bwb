@@ -33,25 +33,29 @@ const lettre = "AZERTYUPQSDFGHJKLMWXCVBN";
 const nombre = "0123456789";
 let plaque ="";
 
-
-for (let i=0; i < 2 ; i++){
-    plaque += lettre.charAt(Math.floor(Math.random() * lettre.length));
-    //console.log(plaque)
+function PlaqueGen (){
+    for (let i=0; i < 2 ; i++){
+        plaque += lettre.charAt(Math.floor(Math.random() * lettre.length));
+        //console.log(plaque)
+    }
+    plaque += "-";
+    
+    //console.log(plaque);
+    
+    for (let i=0; i < 3 ; i++){
+        plaque += nombre.charAt(Math.floor(Math.random() * nombre.length));
+        //console.log(plaque)
+    }
+    plaque += "-";
+    
+    //console.log(plaque);
+    
+    for (let i=0; i < 2 ; i++){
+        plaque += lettre.charAt(Math.floor(Math.random() * lettre.length));
+    }
+    
+    return console.log(plaque);
 }
-plaque += "-";
 
-//console.log(plaque);
+PlaqueGen();
 
-for (let i=0; i < 3 ; i++){
-    plaque += nombre.charAt(Math.floor(Math.random() * nombre.length));
-    //console.log(plaque)
-}
-plaque += "-";
-
-//console.log(plaque);
-
-for (let i=0; i < 2 ; i++){
-    plaque += lettre.charAt(Math.floor(Math.random() * lettre.length));
-}
-
-console.log(plaque)
